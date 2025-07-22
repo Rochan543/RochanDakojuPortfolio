@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rochan Dakoju | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+
+ <!-- Custom Music-Style Loader -->
+<div id="customLoader">
+  <div class="bars">
+    <div class="bar bar1"></div>
+    <div class="bar bar2"></div>
+    <div class="bar bar3"></div>
+    <div class="bar bar4"></div>
+    <div class="bar bar5"></div>
+  </div>
+  <h1 class="loader-title dancing-text">
+  <span>R</span><span>o</span><span>c</span><span>h</span><span>a</span><span>n</span>&nbsp;
+</h1>
+</div>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Theme Toggle -->
+  <div class="theme-slider-toggle">
+    <input type="checkbox" id="themeSwitchSlider" onchange="toggleThemeSwitch()" />
+    <label for="themeSwitchSlider" class="theme-switch-slider">
+      <span class="sun">🌞</span>
+      <span class="moon">🌙</span>
+      <span class="slider-ball"></span>
+    </label>
+  </div>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <ul class="navbar">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#services">Services</a></li>
+
+      <a class="hire-me" href="mailto:premrochan@gmail.com">📩 Hire Me</a>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>I'm <span id="typed"></span></h1>
+        <h2>Associate DevOps Engineer</h2>
+        <p>I build powerful solutions with Cloud, DevOps, and Full-Stack development.</p>
+        <div class="buttons">
+          <a href="https://drive.google.com/file/d/1x3yfiSr2vNSbzBs-ifNCCEMHuAKTzO8c/view?usp=sharing" target="_blank">📄 View Resume</a>
+          <a href="https://drive.google.com/file/d/1x3yfiSr2vNSbzBs-ifNCCEMHuAKTzO8c/view?usp=sharing" download>⬇️ Download Resume</a>
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/Rochan543" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://linkedin.com/in/dakoju-rochan-187a1a215" target="_blank"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="Rochan.jpg" alt="Prem Rochan Profile" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="aws">AWS</button>
+    <button class="filter-btn" data-category="html">HTML/CSS/JS</button>
+    <button class="filter-btn" data-category="mern">MERN</button>
+    <button class="filter-btn" data-category="azure">Azure</button>
+  </div>
+
+
+
+    <div class="project-grid">
+       <!-- Projects Grid -->
+  <div class="project-grid">
+    <div class="project-card" data-category="html">
+      <img src="RKGroup.png" alt="CloudWatch" />
+      <h3>Repati Kosam Website (RK GROUPS) - Personal Application</h3>
+      <p>HTML,CSS,JS,NODEJS,DB</p>
+      <a href="https://github.com/Rochan543/RKGROUPSWEBPAGE.git" target="_blank"><i class="bi bi-github"></i></a>
+    </div>
+
+    <div class="project-card" data-category="aws">
+      <img src="https://thequantuminsider.com/wp-content/uploads/2020/08/aws-logo.png" alt="CloudWatch" />
+      <h3>EC2 Memory Monitoring</h3>
+      <p>AWS</p>
+      <a href="https://github.com/Rochan543/AWS-CloudWatch-Alarm-for-EC2-Memory-Utilization-Monitoring-.git" target="_blank"><i class="bi bi-github"></i></a>
+    </div>
+
+    <div class="project-card" data-category="aws">
+      <img src="https://thequantuminsider.com/wp-content/uploads/2020/08/aws-logo.png" alt="AWS S3 Bucket" />
+      <h3>S3 Bucket Cross Region Replication</h3>
+      <p>AWS</p>
+      <a href="https://github.com/Rochan543/AWS-S3-Bucket-Cross-Region-Replication.git" target="_blank"><i class="bi bi-github"></i></a>
+    </div>
+
+    <div class="project-card" data-category="aws">
+      <img src="https://thequantuminsider.com/wp-content/uploads/2020/08/aws-logo.png" alt="AWS Terraform" />
+      <h3>Spin EKS Cluster Using Terraform</h3>
+      <p>AWS and Terraform</p>
+      <a href="https://github.com/Rochan543/Spin-Eks-Cluster-Using-Terraform-.git" target="_blank"><i class="bi bi-github"></i></a>
+    </div>
+
+    <div class="project-card" data-category="mern">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.nRFfgfdlrXwsKryC52HQTQHaEB?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="MERN Stack"/>
+      <h3>Food Delivery Website</h3>
+      <p>MERN Stack</p>
+      <a href="https://github.com/Rochan543/Food-Delivery-MERN.git" target="_blank"><i class="bi bi-github"></i></a>
+    </div>
+
+    <div class="project-card" data-category="mern">
+      <img src="VIDEO_CHAT.png" alt="mern" />
+      <h3>Chat & Video Calling App</h3>
+      <p>React + Express + MongoDB</p>
+      <a href="https://github.com/Rochan543/streamify-video-calls.git" target="_blank"><i class="bi bi-github"></i></a>
+    </div>
+
+    <div class="project-card" data-category="azure">
+      <img src="https://www.justaftermidnight247.com/wp-content/uploads/2018/11/Azure.png" alt="Azure" />
+      <h3>Microsoft Azure OAuth Login Integration using Node.js</h3>
+      <p>Azure</p>
+      <a href="https://github.com/Rochan543/Microsoft-Azure-OAuth-Login-Integration-using-Node.js.git" target="_blank"><i class="bi bi-github"></i></a>
+    </div>
+
+    <div class="project-card" data-category="azure">
+      <img src="https://www.justaftermidnight247.com/wp-content/uploads/2018/11/Azure.png" alt="Azure" />
+      <h3>End-to-End Cloud API Deployment: Flask API on Azure with Cosmos DB, Flutter Frontend & Postman Testing</h3>
+      <p>Azure</p>
+      <a href="https://github.com/Rochan543/End-to-End-Cloud-API-Deployment-Flask-API-on-Azure-with-Cosmos-DB-Flutter-Frontend-Postman-Testing.git" target="_blank"><i class="bi bi-github"></i></a>
+    </div>
+
+    <div class="project-card" data-category="html">
+      <img src="JobKnock.png" alt="JobKnock" />
+      <h3>Job Knock - Personal Application</h3>
+      <p>HTML,CSS,JS,NODEJS,DB</p>
+      <a href="https://github.com/Rochan543/JobPortal_Team.git" target="_blank"><i class="bi bi-github"></i></a>
+    </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+<!-- Skills Section -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-container">
+
+    <!-- Cloud & DevOps -->
+    <div class="skill-category">
+      <h3>Cloud & DevOps</h3>
+      <div class="skill-icons">
+        <i class="devicon-amazonwebservices-plain-wordmark" title="aws"></i>
+        <i class="devicon-docker-plain colored" title="Docker"></i>
+        <i class="devicon-kubernetes-plain colored" title="Kubernetes"></i>
+        <i class="devicon-git-plain colored" title="Git"></i>
+      </div>
+    </div>
+
+    <!-- Programming Languages -->
+    <div class="skill-category">
+      <h3>Languages</h3>
+      <div class="skill-icons">
+        <i class="devicon-python-plain colored" title="Python"></i>
+        <i class="devicon-java-plain colored" title="Java"></i>
+        <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+      </div>
+    </div>
+
+    <!-- Web Technologies -->
+    <div class="skill-category">
+      <h3>Web Technologies</h3>
+      <div class="skill-icons">
+        <i class="devicon-html5-plain colored" title="HTML5"></i>
+        <i class="devicon-css3-plain colored" title="CSS3"></i>
+      </div>
+    </div>
+
+    <!-- Databases -->
+    <div class="skill-category">
+      <h3>Databases</h3>
+      <div class="skill-icons">
+        <i class="devicon-mongodb-plain colored" title="MongoDB"></i>
+        <i class="devicon-mysql-plain colored" title="MySQL"></i>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="skill-category">
+      <h3>Tools</h3>
+      <div class="skill-icons">
+        <i class="devicon-vscode-plain colored" title="VS Code"></i>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- About Section -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about-card themed">
+    <div class="about-left">
+      <img src="Rochan.jpg" alt="Rochan Dakoju" class="about-img" />
+      <a href="https://drive.google.com/file/d/1x3yfiSr2vNSbzBs-ifNCCEMHuAKTzO8c/view?usp=sharing" download class="resume-button">Download Resume</a>
+
+      <p style="margin-top: 12px; color: #00ffc3; font-weight: bold;">
+        💼 Available for freelance <br> DevOps & Cloud services
+      </p>
+      <a href="#contact" class="hire-me-button">Hire Me</a>
+    </div>
+
+    <div class="about-right">
+      <p>
+        I'm <strong>Rochan Dakoju</strong>, a dedicated <strong>DevOps Engineer</strong> with a core background in <strong>Electronics and Communication Engineering</strong>. I’ve built expertise in infrastructure automation, CI/CD, and containerized cloud-native systems.
+      </p>
+      <p>
+        I bring hands-on experience across both frontend technologies like <strong>HTML, CSS, JavaScript</strong> and backend DevOps toolchains with <strong>AWS, Azure, Docker, Kubernetes</strong>, and CI/CD pipelines.
+      </p>
+      <p>
+        In addition to my full-time role, I actively take up <strong>freelance projects</strong> and collaborations. I help individuals and startups with scalable solutions in both cloud infrastructure and full-stack development.
+      </p>
+
+      <div class="about-section">
+        <h3>🛠️ Services I Offer</h3>
+        <p>
+          ✔️ Cloud & DevOps Consulting (AWS, Azure, CI/CD)<br>
+          ✔️ Dockerization & Kubernetes Deployment<br>
+          ✔️ Frontend Development (HTML, CSS, JavaScript)<br>
+          ✔️ Backend/API Integration (Python, Node.js)<br>
+          ✔️ Resume & Portfolio Website Setup (like this one!)<br>
+          <br>
+          <em>Open to freelance and remote opportunities!</em>
+        </p>
+      </div>
+
+      <div class="about-section">
+        <h3>💼 Current Role</h3>
+        <ul>
+          <li><strong>Associate DevOps Engineer</strong> at <strong>Core VoltMatrix Pvt Ltd</strong> (March, 2025 – Present)</li>
+        </ul>
+      </div>
+
+      <div class="about-section">
+        <h3>📘 Education & Internships</h3>
+        <ul>
+          <li><strong>B.Tech in ECE</strong> – GMR Institute Of Technology (2020 – 2024)</li>
+          <li><strong>Internship</strong> – Concient (Jan 2022 – Feb 2022)</li>
+          <li><strong>Internship</strong> – BSNL (July 2023 – Oct 2023)</li>
+        </ul>
+      </div>
+
+      <div class="about-section">
+        <h3>🎓 Certifications</h3>
+        <ul>
+          <li>Docker & Kubernetes – Udemy</li>
+          <li>AWS – Udemy</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Experience Section -->
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="train-track">
+
+    <!-- 🚂 Locomotive -->
+    <div class="train-loco" data-aos="fade-right">
+      <i class="fas fa-train"></i>
+    </div>
+
+    <!-- 🚉 Train Cars -->
+    <div class="train-cars">
+      <div class="train-car" data-aos="zoom-in-up">
+        <div class="car-body">
+          <h3>Internship – Concient</h3>
+          <p class="company">Jan 2022 – Feb 2022</p>
+          <ul>
+            <li>Basic cloud workflows</li>
+            <li>SDLC overview</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="train-car" data-aos="zoom-in-up">
+        <div class="car-body">
+          <h3>Internship – BSNL</h3>
+          <p class="company">July 2023 – Oct 2023</p>
+          <ul>
+            <li>Fiber splicing & MUX/DEMUX</li>
+            <li>Network ring topology</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="train-car" data-aos="zoom-in-up">
+        <div class="car-body">
+          <h3>Associate DevOps Engineer – Core VoltMatrix Pvt Ltd </h3>
+          <p class="company">Mar 2025 – Present</p>
+          <ul>
+            <li>CI/CD, Docker, Kubernetes</li>
+            <li>Azure Monitor, GitHub Actions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="train-car" data-aos="zoom-in-up">
+        <div class="car-body">
+          <h3>Freelancer – Cloud & DevOps</h3>
+          <p class="company">2024 – Present</p>
+          <ul>
+            <li>Client-based infra automation</li>
+            <li>AWS/Azure deployment, Terraform</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="services">
+  <h2>💼 My Services</h2>
+  <div class="services-container">
+    <div class="service-card">
+      <i class="devicon-amazonwebservices-original colored service-icon"></i>
+      <h3>Cloud Solutions (AWS & Azure)</h3>
+      <p>I help set up scalable and secure cloud infrastructure, automate deployment, and optimize costs.</p>
+    </div>
+    <div class="service-card">
+      <i class="devicon-docker-plain colored service-icon"></i>
+      <h3>DevOps & CI/CD</h3>
+      <p>From GitHub Actions to Azure Pipelines, I implement seamless CI/CD and containerization strategies.</p>
+    </div>
+    <div class="service-card">
+      <i class="devicon-html5-plain colored service-icon"></i>
+      <h3>Frontend Development</h3>
+      <p>Responsive and fast UIs using HTML, CSS, JavaScript, and frameworks like React.</p>
+    </div>
+    <div class="service-card">
+      <i class="devicon-python-plain colored service-icon"></i>
+      <h3>Backend Development</h3>
+      <p>API development with Flask, Express, or Node.js — secure, scalable, and clean.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+    <input type="text" name="Name" placeholder="Your Name" required />
+    <input type="email" name="Email" placeholder="Your Email" required />
+    <textarea name="Your Message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+    <p id="form-status"></p> <!-- Optional: shows status messages -->
+  </form>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 <strong>Rochan Dakoju</strong>. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://github.com/Rochan543" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="https://linkedin.com/in/dakoju-rochan-187a1a215" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:premrochan@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
